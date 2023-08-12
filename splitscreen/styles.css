@@ -1,0 +1,29 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.split-container {
+    display: flex;
+    height: calc(100vh - (16px *2)); 
+}
+
+.left-panel,
+.right-panel {
+    flex: 1;
+	height: auto;
+	overflow-y: scroll; 
+	display: flex;
+	flex-direction : column; 
+}
+
+.left-panel {
+    background-color: #f1f1f1;
+    
+}
+
+.right-panel {
+    background-color:#fff;
+}
