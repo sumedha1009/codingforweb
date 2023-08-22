@@ -1,0 +1,212 @@
+
+
+
+/*888erhioergoijberiogbeoirbgoiebgoier*/
+
+/* CSS RESETS */
+/* ----------------------------------------------------- */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Global styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center and style images */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Global padding */
+body {
+    padding: 25px;
+}
+
+/* Chart layout */
+#chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual card styling */
+#chart > div {
+    flex-basis: calc(25%);
+    margin-bottom: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Media queries for responsiveness */
+/* First breakpoint for tablets and larger phones */
+@media (max-width: 1024px) {
+    #chart > div {
+        flex-basis: calc(33.33%);
+    }
+}
+
+/* Second breakpoint for smaller phones */
+@media (max-width: 768px) {
+    #chart > div {
+        flex-basis: calc(50%);
+    }
+}
+
+/* Third breakpoint for smallest phones */
+@media (max-width: 480px) {
+    #chart > div {
+        flex-basis: 100%;
+    }
+}
+
+#namecard1{
+    background-color: #EECDDC;
+    border-style:solid;
+}
+#namecard6{
+    background-color: #EECDDC;
+    border-style:solid;
+}
+#namecard11{
+    background-color: #EECDDC;
+    border-style:solid;
+}
+#namecard16{
+    background-color: #EECDDC;
+    border-style:solid;
+}
+#namecard17{
+    background-color: #EECDDC;
+    border-style:solid;
+}
+#namecard2{
+    background-color: #C1E7F1;
+    border-style:solid;
+}
+#namecard7{
+    background-color: #C1E7F1;
+    border-style:solid;
+}
+#namecard12{
+    background-color: #C1E7F1;
+    border-style:solid;
+}
+#namecard13{
+    background-color: #C1E7F1;
+    border-style:solid;
+}
+#namecard18{
+    background-color: #C1E7F1;
+    border-style:solid;
+}
+#namecard3{
+    background-color: #E3EED3;
+    border-style:solid;
+}
+#namecard8{
+    background-color: #E3EED3;
+    border-style:solid;
+}
+#namecard9{
+    background-color: #E3EED3;
+    border-style:solid;
+}
+#namecard14{
+    background-color: #E3EED3;
+    border-style:solid;
+}
+#namecard19{
+    background-color: #E3EED3;
+    border-style:solid;
+}
+#namecard4{
+    background-color: #F1EFC4;
+    border-style:solid;
+}
+#namecard5{
+    background-color: #F1EFC4;
+    border-style:solid;
+}
+#namecard10{
+    background-color: #F1EFC4;
+    border-style:solid;
+}
+#namecard15{
+    background-color: #F1EFC4;
+    border-style:solid;
+}
+#namecard20{
+    background-color: #F1EFC4;
+    border-style:solid;
+}
+#heading{
+    background-color: red;
+    border-style:solid;
+}
+/* Heading style */
+#heading {
+    background-color: red;
+    border-style: solid;
+    text-align: center;
+    text-decoration-color: yellow;
+}
+
+/* Custom h1 style */
+.custom-heading {
+    font-family: 'Gonzo', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: auto; /* Adjust as needed to fit your design */
+}
+
+.rounded-box {
+    background-color: #f2f2f2;
+    border-radius: 20px; /* Adjust the value for more/less rounding */
+    display: inline-block; /* Makes the box fit around the content */
+    margin: 10px auto; /* Centers the box horizontally and adds spacing at the top and bottom */
+    border: 1px solid black; /* Adds a black border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    align-self: center;
+    padding: 5px; /* Adds space between text and border */
+}
+
+.bold-text {
+    font-weight: bold;
+    display: flex;
+    justify-content:space-evenly ;
+   
+}
+
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Rest of your CSS styles */
+
+
+
