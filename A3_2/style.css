@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #7a6969;
+  color: #f2f2f2;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #333;
+}
+.navbar {
+  display: flex;
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar input#menu-toggler {
+  display: none;
+}
+.navbar #hamburger-btn {
+  cursor: pointer;
+  display: none;
+}
+.navbar .all-links {
+  display: flex;
+  align-items: center;
+}
+.navbar .all-links li {
+  position: relative;
+  list-style: none;
+}
+.navbar .logo a {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+header a, footer a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  padding: 20px 0;
+  display: inline-block;
+}
+header a:hover, footer a:hover {
+  color: #ddd;
+}
+
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0 0;
+}
+section h2 {
+  font-size: 2rem;
+}
+section > p {
+  text-align: center;
+}
+
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000;
+  padding: 20px 0;
+}
+footer div {
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer span {
+  color: #fff;
+}
+footer a {
+  padding: 0;
+}
+@media screen and (max-width: 860px) {
+  .navbar .all-links {
+    position: fixed;
+    left: -100%;
+    width: 300px;
+    display: block;
+    height: 100vh;
+    top: 75px;
+    background: #333;
+    transition: left 0.3s ease;
+}
+.navbar #menu-toggler:checked~.all-links {
+    left: 0;
+}
+.navbar .all-links li {
+    font-size: 18px;
+}
+.navbar #hamburger-btn {
+    display: block;
+}
+section > p {
+    text-align: center;
+}
+section .cards .card {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 30px;
+}
+.homepage .content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.homepage .content .text {
+    font-size: 17px;
+}
+.content a {
+    font-size: 17px;
+    padding: 9px 20px;
+}
+
+footer a {
+    height: 0;
+}
+}
+@media screen and (max-width: 560px) {
+  section .cards .card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: max-content;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+
+/* ... Previous CSS rules ... */
+
+/* Style your genre sections as needed */
+
+.genre-section {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Ensure books are spaced evenly in each section */
+}
+
+/* Style for nominee container */
+.nominees {
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Ensure nominees are spaced evenly */
+}
+
+/* Style for individual books within a nominee section */
+.book {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 200px; /* Set the desired width for your books */
+  flex-basis: calc(33.33% - 20px); /* Set the desired width for nominees and adjust flex-basis */
+  box-sizing: border-box;
+  transition: transform 0.2s; /* Add a smooth hover effect */
+}
+
+/* Style for book images */
+.book img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Add a hover effect for books */
+.book:hover {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+/* ... Rest of your CSS ... */

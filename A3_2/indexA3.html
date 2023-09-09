@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Awards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo"><a href="#">LOGO</a></h2>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </label>
+            <ul class="all-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Fiction">Fiction</a></li>
+                <li><a href="#MysteryThriller">Mystery & Thriller</a></li>
+                <li><a href="#HistoricalFiction">Historical Fiction</a></li>
+                <li><a href="#Fantasy">Fantasy</a></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="homepage" id="home">
+        <br>
+        <h1><strong style="color: white;">Trending Now!</strong></h1>
+
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <a href="https://www.goodreads.com/book/show/59333203-evil-eye"><img src="img1.jpeg"></a>
+                <a href="https://www.goodreads.com/book/show/75593883-the-book-of-more-delights"><img src="img2.jpeg"></a>
+                <a href="https://www.goodreads.com/book/show/75302266-a-study-in-drowning"><img src="img3.jpeg"></a>
+                <a href="https://www.goodreads.com/book/show/55959466-black-af-history"><img src="img4.jpeg"></a>
+                <a href="https://www.goodreads.com/book/show/112093865-sure-i-ll-join-your-cult"><img src="img5.jpeg"></a>
+                <a href="https://www.goodreads.com/book/show/75293475-the-last-devil-to-die"><img src="img6.jpeg"></a>
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </section>
+
+    <div id="genreSections"></div>
+
+    
+
+    <footer>
+        <div>
+            <span>Copyright © 2023 All Rights Reserved</span>
+            <span class="link">
+                <a href="#">Home</a>
+                <a href="#contact">Contact</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="carousel.js" defer></script>
+    <script src="book-genres.js" defer></script>
+</body>
+</html>
